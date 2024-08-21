@@ -20,144 +20,213 @@
     <style>
         .manrope {
             font-family: "Manrope", sans-serif;
-           
+
         }
     </style>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-                'bg-color': '#ABEF5F',
-                'bg-color2': '#ABEF5F80',
-                'heading-color' : '#212121'
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-color': '#ABEF5F',
+                        'bg-color2': '#ABEF5F80',
+                        'heading-color': '#212121'
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 </head>
 
-<body class="manrope bg-[#f7f7f7]">
+<body class="manrope bg-[#f7f7f7] pb-36 ">
 
     <!-- Navbar code start -->
 
-        <div class="navbar flex md:justify-around justify-between sm:hidden lg:flex">
-             <div class="logo flex gap-3">
-                <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
-                <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
-             </div>
-
-                <!-- menu -->
-                <div class="">
-                    <div class="dropdown">
-                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                          <div class="m-menu">
-                              <i class="fa-solid fa-bars bg-white border border-stone-200 text-xl py-[10px] px-4 rounded-full shadow-2xl text-zinc-700"></i>
-                           </div>
-                      </div>
-                      <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
-                        <div class="page list-none flex flex-col gap-5">
-                         <li class="text-red-600 hover:text-red-600 font-bold text-center mx-auto "><a href="">Close</a></li>
-                          <li class="text-black font-bold"><a href="">Home</a></li>
-                          <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
-                          <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
-                          <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
-                          <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
-                          
-                    </div>
-                      </ul>
-                    </div>
-                  
-                  <div class="navbar-center hidden lg:flex">
-                    <!-- new -->
-                    <div class="page list-none flex gap-5">
-                      <li class="text-black font-bold"><a href="">Home</a></li>
-                      <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
-                      <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
-                      <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
-                      <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
-                </div>
-                  </div>
-                  
-                </div>
-
-             <div class="shop sm:flex gap-5 hidden">
-                <i class="fa-solid fa-magnifying-glass text-zinc-700 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl"></i>
-                <i class="fa-solid fa-cart-shopping  text-zinc-700 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl"></i>
-                <button class="bg-bg-color py-2 px-6 rounded-full text-black font-bold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-slate-200 py-2 px-2 rounded-full"></i></button>
-             </div>
+    <div class="navbar flex md:justify-around justify-between sm:hidden lg:flex pt-4 md:pt-8">
+        <div class="logo flex gap-3 pl-4 md:pl-0">
+            <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
+            <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
         </div>
+
+        <!-- menu -->
+        <div class="">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <div class="m-menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor"
+                            class="size-10 bg-white border border-stone-200 py-[5px] px-0 rounded-full shadow-2xl">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                        <!-- <i class="fa-solid fa-bars bg-white border border-stone-200 text-xl py-[10px] px-4 rounded-full shadow-2xl text-zinc-700"></i> -->
+                    </div>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                    <div class="page list-none flex flex-col gap-5">
+                        <li class="text-red-600 hover:text-red-600 font-bold text-center mx-auto "><a href="">Close</a>
+                        </li>
+                        <li class="text-black font-bold"><a href="">Home</a></li>
+                        <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Service</a></li>
+                        <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Portfolio</a></li>
+                        <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Blog</a></li>
+                        <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Contact</a></li>
+
+                    </div>
+                </ul>
+            </div>
+
+            <div class="navbar-center hidden lg:flex">
+                <!-- new -->
+                <div class="page list-none flex gap-5">
+                    <li class="text-black font-bold"><a href="">Home</a></li>
+                    <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a>
+                    </li>
+                    <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                            href="">Portfolio</a></li>
+                    <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a>
+                    </li>
+                    <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                            href="">Contact</a></li>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="shop sm:flex gap-5 hidden">
+            <!-- <i class="fa-solid fa-magnifying-glass text-zinc-700 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="size-12 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+            </svg>
+
+            <!-- shop-icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor"
+                class="size-12 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+            </svg>
+
+            <!-- <i class="fa-solid fa-cart-shopping  text-zinc-700 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl"></i> -->
+            <button class="bg-bg-color py-2 px-6 rounded-full text-black font-bold">Book Consult <i
+                    class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-slate-200 py-2 px-2 rounded-full ml-2"></i></button>
+        </div>
+    </div>
 
     <!-- Navbar code end -->
 
 
-     <!-- nabbar desktop design -->
+    <!-- nabbar desktop design -->
 
 
-     <div class="navbar sm:flex justify-between hidden lg:hidden">
-        <div class="logo flex gap-3">
-           <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
-           <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
+    <div class="navbar sm:flex justify-between hidden lg:hidden">
+        <div class="logo flex gap-3 pl-5">
+            <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
+            <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
         </div>
 
-         <div class="destop-design">
+        <div class="destop-design">
 
             <div class="shop flex gap-5">
-                <i class="fa-solid fa-magnifying-glass text-zinc-700 bg-white border border-stone-200 py-[0px] px-4 rounded-full shadow-2xl flex items-center"></i>
-                <i class="fa-solid fa-cart-shopping  text-zinc-700 bg-white border border-stone-200 py-2 px-4 flex items-center rounded-full shadow-2xl"></i>
-                <button class="bg-bg-color py-2 px-6 rounded-full text-black font-bold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-slate-200 py-2 px-2 rounded-full"></i></button>
-             </div>
-     
-              <!-- menu -->
-              <div class="">
-                 <div class="dropdown">
-                   <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                       <div class="m-menu">
-                           <i class="fa-solid fa-bars text-zinc-700 bg-white border border-stone-200 text-xl py-[10px] px-4 rounded-full shadow-2xl"></i>
+                <!-- <i class="fa-solid fa-magnifying-glass text-zinc-700 bg-white border border-stone-200 py-[0px] px-4 rounded-full shadow-2xl flex items-center"></i> -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-12 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+
+                <!-- shop-icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-12 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+
+                <!-- <i class="fa-solid fa-cart-shopping  text-zinc-700 bg-white border border-stone-200 py-2 px-4 flex items-center rounded-full shadow-2xl"></i> -->
+
+                <button class="bg-bg-color py-2 px-6 rounded-full text-black font-bold">Book Consult <i
+                        class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-slate-200 py-2 px-2 rounded-full"></i></button>
+            </div>
+
+            <!-- menu -->
+            <div class="">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <div class="m-menu">
+                            <i
+                                class="fa-solid fa-bars text-zinc-700 bg-white border border-stone-200 text-xl py-[10px] px-4 rounded-full shadow-2xl"></i>
                         </div>
-                   </div>
-                   <ul
-                     tabindex="0"
-                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
-                     <div class="page list-none flex flex-col gap-5">
-                      <li class="text-red-600 hover:text-red-600 font-bold text-center mx-auto "><a href="">Close</a></li>
-                       <li class="text-black font-bold"><a href="">Home</a></li>
-                       <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
-                       <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
-                       <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
-                       <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
-                       
-                 </div>
-                   </ul>
-                 </div>
-               
-               <div class="navbar-center hidden lg:flex">
-                 <!-- new -->
-                 <div class="page list-none flex gap-5">
-                   <li class="text-black font-bold"><a href="">Home</a></li>
-                   <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
-                   <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
-                   <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
-                   <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
-             </div>
-               </div>
-               
-             </div>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                        <div class="page list-none flex flex-col gap-5">
+                            <li class="text-red-600 hover:text-red-600 font-bold text-center mx-auto "><a
+                                    href="">Close</a></li>
+                            <li class="text-black font-bold"><a href="">Home</a></li>
+                            <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a
+                                    href="">Service</a></li>
+                            <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                    href="">Portfolio</a></li>
+                            <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                    href="">Blog</a></li>
+                            <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                    href="">Contact</a></li>
 
-         </div>
-    
-   </div>
-    
-    
-       <!-- Complete Navbar -->
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <!-- new -->
+                    <div class="page list-none flex gap-5">
+                        <li class="text-black font-bold"><a href="">Home</a></li>
+                        <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Service</a></li>
+                        <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Portfolio</a></li>
+                        <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Blog</a></li>
+                        <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a
+                                href="">Contact</a></li>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Complete Navbar -->
 
 
-    
+      <!-- Banner section start -->
+
+           <div class="banner flex flex-col items-center py-6">
+                <img src="assets/banner.png" alt="">
+                <h1 class="text-leading-text font-bold w-5/6 text-2xl xl:text-6xl sm:text-4xl sm:w-4/5 lg:w-4/5 2xl:w-3/5 pt-8 text-center xl:leading-tight 2xl:leading-tight">A barn house of this design has a striking appearance</h1>
+                <p class="text-black text-sm px-3 sm:px-0 pt-3 sm:pt-8 md:w-3/5 2xl:w-2/4 lg:w-3/5 text-center xl:leading-7 2xl:leading-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="bg-bg-color2 py-2 mt-5 sm:mt-9 sm:px-6 px-16 rounded-full text-black font-bold">View Details<i
+                    class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-neutral-900 ml-2 py-2 px-2 rounded-full"></i></button>
+           </div>
+
+      <!-- Banner section end -->
+
+
+
 
 </body>
 
