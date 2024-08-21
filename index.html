@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- Tailwind css Cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Cdn -->
+    <script src="https://kit.fontawesome.com/c81e6c4530.js" crossorigin="anonymous"></script>
+    <!-- Goole Font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- DiasyUi Cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        .manrope {
+            font-family: "Manrope", sans-serif;
+           
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'bg-color': '#ABEF5F',
+                'bg-color2': '#ABEF5F80',
+                'heading-color' : '#212121'
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+
+<body class="manrope bg-[#f7f7f7]">
+
+    <!-- Navbar code start -->
+
+        <div class="navbar flex md:justify-around justify-between sm:hidden lg:flex">
+             <div class="logo flex gap-3">
+                <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
+                <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
+             </div>
+
+                <!-- menu -->
+                <div class="">
+                    <div class="dropdown">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <div class="m-menu">
+                              <i class="fa-solid fa-bars bg-white border border-stone-200 text-xl py-[10px] px-4 rounded-full shadow-2xl text-zinc-700"></i>
+                           </div>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                        <div class="page list-none flex flex-col gap-5">
+                         <li class="text-red-600 hover:text-red-600 font-bold text-center mx-auto "><a href="">Close</a></li>
+                          <li class="text-black font-bold"><a href="">Home</a></li>
+                          <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
+                          <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
+                          <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
+                          <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
+                          
+                    </div>
+                      </ul>
+                    </div>
+                  
+                  <div class="navbar-center hidden lg:flex">
+                    <!-- new -->
+                    <div class="page list-none flex gap-5">
+                      <li class="text-black font-bold"><a href="">Home</a></li>
+                      <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
+                      <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
+                      <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
+                      <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
+                </div>
+                  </div>
+                  
+                </div>
+
+             <div class="shop sm:flex gap-5 hidden">
+                <i class="fa-solid fa-magnifying-glass text-zinc-700 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl"></i>
+                <i class="fa-solid fa-cart-shopping  text-zinc-700 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl"></i>
+                <button class="bg-bg-color py-2 px-6 rounded-full text-black font-bold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-slate-200 py-2 px-2 rounded-full"></i></button>
+             </div>
+        </div>
+
+    <!-- Navbar code end -->
+
+
+     <!-- nabbar desktop design -->
+
+
+     <div class="navbar sm:flex justify-between hidden lg:hidden">
+        <div class="logo flex gap-3">
+           <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
+           <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
+        </div>
+
+         <div class="destop-design">
+
+            <div class="shop flex gap-5">
+                <i class="fa-solid fa-magnifying-glass text-zinc-700 bg-white border border-stone-200 py-[0px] px-4 rounded-full shadow-2xl flex items-center"></i>
+                <i class="fa-solid fa-cart-shopping  text-zinc-700 bg-white border border-stone-200 py-2 px-4 flex items-center rounded-full shadow-2xl"></i>
+                <button class="bg-bg-color py-2 px-6 rounded-full text-black font-bold">Book Consult <i class="fa-solid fa-arrow-right-long -rotate-45 bg-black text-slate-200 py-2 px-2 rounded-full"></i></button>
+             </div>
+     
+              <!-- menu -->
+              <div class="">
+                 <div class="dropdown">
+                   <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                       <div class="m-menu">
+                           <i class="fa-solid fa-bars text-zinc-700 bg-white border border-stone-200 text-xl py-[10px] px-4 rounded-full shadow-2xl"></i>
+                        </div>
+                   </div>
+                   <ul
+                     tabindex="0"
+                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute right-0">
+                     <div class="page list-none flex flex-col gap-5">
+                      <li class="text-red-600 hover:text-red-600 font-bold text-center mx-auto "><a href="">Close</a></li>
+                       <li class="text-black font-bold"><a href="">Home</a></li>
+                       <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
+                       <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
+                       <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
+                       <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
+                       
+                 </div>
+                   </ul>
+                 </div>
+               
+               <div class="navbar-center hidden lg:flex">
+                 <!-- new -->
+                 <div class="page list-none flex gap-5">
+                   <li class="text-black font-bold"><a href="">Home</a></li>
+                   <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a></li>
+                   <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Portfolio</a></li>
+                   <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Blog</a></li>
+                   <li class="text-zinc-700  hover:text-black hover:font-bold hover:duration-300"><a href="">Contact</a></li>
+             </div>
+               </div>
+               
+             </div>
+
+         </div>
+    
+   </div>
+    
+    
+       <!-- Complete Navbar -->
+
+
+    
+
+</body>
+
+</html>
