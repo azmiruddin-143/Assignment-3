@@ -20,8 +20,6 @@
     <style>
         .manrope {
             font-family: "Manrope", sans-serif;
-
-
         }
     </style>
     <script>
@@ -41,11 +39,11 @@
 
 </head>
 
-<body class="manrope pb-36">
+<body class="manrope pb-36 bg-[#f4f4f4]">
 
     <!-- Navbar code start -->
 
-    <div class="navbar flex md:justify-around justify-between sm:hidden lg:flex pt-4 md:pt-8 items-center">
+    <div class="navbar bg-white flex md:justify-around justify-between sm:hidden lg:flex pt-4 md:pt-8 items-center">
         <div class="logo flex gap-3 pl-4 md:pl-0">
             <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
             <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
@@ -216,7 +214,7 @@
 
     <!-- Banner section start -->
 
-    <div class="banner flex flex-col items-center py-6">
+    <div class="banner flex flex-col items-center pt-6 pb-12 sm:pb-24 bg-white">
         <img src="assets/banner.png" alt="">
         <h1
             class="text-leading-text font-bold w-5/6 text-2xl xl:text-6xl sm:text-4xl sm:w-4/5 lg:w-4/5 2xl:w-3/5 pt-8 text-center xl:leading-tight 2xl:leading-tight">
@@ -237,7 +235,7 @@
     <!-- about-section start -->
 
     <div
-        class="about bg-[#f4f4f4] flex flex-col lg:flex-row justify-center lg:px-16 xl:px-24 py-6 sm:py-24 lg:gap-10 xl:gap-0  2xl:px-0">
+        class="about bg-[#f4f4f4] flex flex-col lg:flex-row justify-center lg:px-16 xl:px-24 py-6 sm:py-24 lg:gap-10 xl:gap-6  2xl:px-0">
         <div
             class="l-content lg:w-7/12  xl:w-7/12 2xl:w-[50%] sm:flex sm:flex-col sm:items-center lg:block lg:items-start lg:text-start">
             <img class="relative -left-10 -top-6 hidden sm:block" src="assets/Vector.png" alt="">
@@ -251,17 +249,18 @@
                 We design thoughtful, liveable spaces
             </h1>
             <p
-                class="2xl:w-4/6 xl:w-4/5 px-3 md:w-4/5 md:mx-auto lg:md:mx-0 text-sm text-center lg:text-start text-black leading-7 pb-5">
+                class="2xl:w-4/6 xl:w-4/5 px-3 md:w-4/5 md:mx-auto lg:md:mx-0 text-sm text-center lg:text-start text-black sm:leading-7 pb-5">
                 The barn house captivates with its blend of rustic charm and
                 modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
             <div class="sm:flex px-5 gap-5 lg:block lg:px-0">
                 <div class="cart bg-white w-fit rounded-lg py-6 pl-6 mb-4">
                     <div class="flex items-center gap-5">
-                        <img src="assets/commercial.png" alt="">
+                        <img class="w-12 sm:w-auto" src="assets/commercial.png" alt="">
                         <div>
-                            <h1>Commercial</h1>
-                            <p class="xl:w-4/6 lg:w-11/12">The barn house captivates with its blend of rustic charm and
+                            <h1 class="text-heading-text font-bold pb-2">Commercial</h1>
+                            <p class="xl:w-4/6 lg:w-11/12 sm:text-base text-sm">The barn house captivates with its blend
+                                of rustic charm and
                                 modern.</p>
                         </div>
                     </div>
@@ -269,10 +268,11 @@
                 <!-- card2 -->
                 <div class="cart bg-white w-fit rounded-lg py-6 pl-6 mb-4">
                     <div class="flex items-center gap-5">
-                        <img src="assets/residential.png" alt="">
+                        <img class="w-12 sm:w-auto" src="assets/residential.png" alt="">
                         <div>
-                            <h1>Residential</h1>
-                            <p class="xl:w-4/6 lg:w-11/12">The barn house captivates with its blend of rustic charm and
+                            <h1 class="text-heading-text font-bold pb-2">Residential</h1>
+                            <p class="xl:w-4/6 lg:w-11/12 sm:text-base text-sm">The barn house captivates with its blend
+                                of rustic charm and
                                 modern.</p>
                         </div>
                     </div>
@@ -282,10 +282,224 @@
         </div>
 
         <div class="r-img lg:flex md:pt-9 lg:pt-0">
-            <img class="2xl:pt-0 xl:pt-6 ml-5 sm:mx-auto w-[90%] sm:w-[95%] lg:w-full lg:mx-0" src="assets/Rectangle.png" alt="">
+            <img class="2xl:pt-0 xl:pt-6 ml-5 sm:mx-auto w-[90%] sm:w-[95%] lg:w-full lg:mx-0"
+                src="assets/Rectangle.png" alt="">
         </div>
     </div>
     <!-- about-section end -->
+
+    <!-- count-section start -->
+
+    <div
+        class="count grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-4 place-items-center bg-white my-5 md:my-16 lg:mx-16  xl:mx-24 md:mx-8 sm:mx-4 gap-8 sm:gap-10 md:gap-0 2xl:mx-44 rounded-2xl py-12">
+        <div class="sm:space-y-4 space-y-2 flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="lg:size-12 size-10 text-zinc-700">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+            </svg>
+            <h3 class="text-heading-text text-4xl lg:text-5xl font-bold">235+</h3>
+            <p class="text-zinc-700 text-base">Happy Client Review</p>
+
+        </div>
+        <div class="sm:space-y-4 space-y-2 flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="lg:size-12 size-10 text-zinc-700">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21" />
+            </svg>
+
+            <h3 class="text-heading-text text-4xl lg:text-5xl font-bold">50+</h3>
+            <p class="text-zinc-700 text-base">Work Departments</p>
+
+        </div>
+        <div class="sm:space-y-4 space-y-2 flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="lg:size-12 size-10 text-zinc-700">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+            </svg>
+            <h3 class="text-heading-text text-4xl lg:text-5xl font-bold">30+</h3>
+            <p class="text-zinc-700 text-base">Our Happy Client</p>
+
+        </div>
+        <div class="sm:space-y-4 space-y-2 flex flex-col items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="lg:size-12 size-10 text-zinc-700">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+            </svg>
+            <h3 class="text-heading-text text-4xl lg:text-5xl font-bold">307+</h3>
+            <p class="text-zinc-700 text-base">Staff Members</p>
+
+        </div>
+    </div>
+
+
+    <!-- count-section start -->
+
+
+
+
+    <!-- my work section start -->
+
+
+    <div class="work sm:py-8 md:py-12 lgpy-16 py-5">
+        <!-- top -->
+        <div class=" flex flex-col items-center space-y-5">
+            <button
+                class="bg-white pr-5 pl-2 py-2 font-bold rounded-full text-stone-800 mx-auto sm:mx-0  flex flex-row-reverse gap-2 items-center">Book
+                Consult <i class="fa-solid fa-arrow-right-long text-stone-800 py-2 px-2 rounded-full ml-2"></i></button>
+            <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold">
+                Our Works Process
+            </h1>
+            <p
+                class="2xl:w-2/5 2xl:leading-relaxed xl:w-3/6 lg:w-3/6 sm:w-4/6 md:w-4/6 sm:text-base text-sm px-4  mx-auto text-center">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal accents.</p>
+        </div>
+
+        <!-- bottom -->
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center mx-4 gap-6 sm:mx-9 my-5  sm:my-20 2xl:mx-36 lg:mx-14 xl:mx-24 xl:gap-10">
+            <div class="item bg-[#E7C1D3] rounded-xl xl:w-5/10 2xl:w-5/6 px-4 py-5 sm:py-10">
+                <img src="assets/concept.png" alt="">
+                <h1 class="text-heading-text font-bold text-2xl py-2">Concept</h1>
+                <p class="sm:w-5/6 text-zinc-700 text-base pt-2">The barn house captivates with its blend of rustic
+                    charm and modern.</p>
+            </div>
+            <div class="item bg-amber-200 rounded-xl xl:w-5/10 lg:w-8/10  2xl:w-5/6 px-4 py-5 sm:py-10">
+                <img src="assets/flow-chart.png" alt="">
+                <h1 class="text-heading-text font-bold text-2xl py-2">Design Process</h1>
+                <p class="w-5/6 text-zinc-700 text-base">The barn house captivates with its blend of rustic charm and
+                    modern.</p>
+            </div>
+
+            <div class="item bg-emerald-200 rounded-xl xl:w-5/10 2xl:w-5/6 px-4 py-5 sm:py-10">
+                <img src="assets/vision.png" alt="">
+                <h1 class="text-heading-text font-bold text-2xl py-2">Supervision</h1>
+                <p class="w-5/6 text-zinc-700 text-base">The barn house captivates with its blend of rustic charm and
+                    modern.</p>
+            </div>
+
+            <div class="item bg-blue-300 rounded-xl xl:w-5/10 2xl:w-5/6 px-4 py-5 sm:py-10">
+                <img src="assets/budget-planning.png" alt="">
+                <h1 class="text-heading-text font-bold text-2xl py-2">Budget Planning</h1>
+                <p class="w-5/6 text-zinc-700 text-base">The barn house captivates with its blend of rustic charm and
+                    modern.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- my work section start -->
+
+
+    <!-- portfolio part start -->
+
+    <div class="portfolio py-20 bg-[#f4f4f4] md:bg-white">
+        <div class=" flex flex-col items-center space-y-5">
+            <button
+                class="bg-bg-color2 pr-5 pl-2 py-2 font-bold rounded-full text-stone-800 mx-auto sm:mx-0  flex flex-row-reverse gap-2 items-center">Explore
+                our Latest works <i
+                    class="fa-solid fa-arrow-right-long text-stone-800 py-2 px-2 rounded-full ml-2"></i></button>
+            <h1 class="lg:text-5xl md:text-4xl text-3xl font-bold">
+                Our Latest Portfolio
+            </h1>
+            <p
+                class="2xl:w-2/5 2xl:leading-relaxed text-zinc-700 xl:w-3/6 lg:w-3/6 sm:w-4/6 md:w-4/6 sm:text-base text-sm px-4  mx-auto text-center">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+                wood, sleek metal accents.</p>
+        </div>
+
+        <!-- grid section -->
+
+        <div class="parent">
+
+            <div
+                class="azmir flex flex-col lg:flex-row justify-center gap-16 lg:gap-14 xl:gap-36 2xl:gap-56 mx-5 my-20 lg:mx-14 xl:mx-0">
+                <div
+                    class="g-1 flex flex-col lg:flex-row  gap-8 lg:w-7/12 2xl:w-6/12 xl:w-6/12 lg:gap-8 xl:gap-8 2xl:gap-8   py-4 px-8 rounded-xl items-center bg-white lg:border lg:border-[#d1d0d0]">
+                    <div>
+                        <img class="w-full" src="assets/img1.png" alt="">
+                    </div>
+
+                    <div class="xl:space-y-3 space-y-2 lg:space-y-1 w-4/5">
+                        <h1 class="text-black font-bold text-xl md:text-2xl">Commercial</h1>
+                        <p class="text-zinc-700 sm:text-base text-sm ">The barn house captivates with its blend of
+                            rustic charm and modern. The barn
+                            house captivates with its blend of rustic charm and modern .</p>
+                        <button class="rounded-full text-black text-lg font-bold">View Details<i
+                                class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-stone-800 py-2 px-2 rounded-full ml-2"></i></button>
+                    </div>
+                </div>
+
+                <div class="g-2 bg-white lg:border lg:border-[#d1d0d0] py-5 px-5 rounded-xl flex justify-center">
+                    <img src="assets/img2.png" alt="">
+                </div>
+            </div>
+               
+                  
+            <div class="azmir-2 flex flex-col lg:flex-row gap-5  xl:gap-16 lg:gap-5 2xl:gap-14 justify-center md:mx-14 mx-5">
+                     
+            <div class="g-3 bg-white lg:border lg:border-[#d1d0d0] md:py-5 md:px-5 py-3 px-0 rounded-xl flex items-center justify-center">
+                <img src="assets/img3.png" alt="">
+            </div>
+
+            <div
+            class="g-4 flex flex-col lg:flex-row  gap-8 lg:w-7/12 2xl:w-6/12 xl:w-5/12 lg:gap-8 xl:gap-8 2xl:gap-8  border bg-white lg:border lg:border-[#d1d0d0] py-4 px-8 rounded-xl items-center">
+            <div>
+                <img class="w-full" src="assets/img4.png" alt="">
+            </div>
+
+            <div class="xl:space-y-3 space-y-2 lg:space-y-1 w-4/5">
+                <h1 class="text-black font-bold text-xl md:text-2xl">Commercial</h1>
+                <p class="text-zinc-700 sm:text-base text-sm ">The barn house captivates with its blend of
+                    rustic charm and modern. The barn
+                    house captivates with its blend of rustic charm and modern .</p>
+                <button class="rounded-full text-black text-lg font-bold">View Details<i
+                        class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-stone-800 py-2 px-2 rounded-full ml-2"></i></button>
+            </div>
+        </div>
+
+            <div class="g-5 flex items-center bg-white lg:border lg:border-[#d1d0d0] py-5 px-5 justify-center rounded-xl">
+                <img src="assets/img5.png" alt="">
+            </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- portfolio part end -->
+
+
+
+    <!-- copy part -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
