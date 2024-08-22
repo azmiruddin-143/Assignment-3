@@ -21,6 +21,7 @@
         .manrope {
             font-family: "Manrope", sans-serif;
 
+
         }
     </style>
     <script>
@@ -40,11 +41,11 @@
 
 </head>
 
-<body class="manrope bg-[#f7f7f7] pb-36 ">
+<body class="manrope pb-36">
 
     <!-- Navbar code start -->
 
-    <div class="navbar flex md:justify-around justify-between sm:hidden lg:flex pt-4 md:pt-8">
+    <div class="navbar flex md:justify-around justify-between sm:hidden lg:flex pt-4 md:pt-8 items-center">
         <div class="logo flex gap-3 pl-4 md:pl-0">
             <i class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-black py-2 px-2 rounded-full"></i>
             <h1 class="text-heading-color font-bold text-3xl">Rinterio </h1>
@@ -86,7 +87,7 @@
 
             <div class="navbar-center hidden lg:flex">
                 <!-- new -->
-                <div class="page list-none flex gap-5">
+                <div class="page list-none flex xl:gap-12 md:gap-7">
                     <li class="text-black font-bold"><a href="">Home</a></li>
                     <li class="text-zinc-700 hover:text-black hover:font-bold hover:duration-300"><a href="">Service</a>
                     </li>
@@ -101,7 +102,7 @@
 
         </div>
 
-        <div class="shop sm:flex gap-5 hidden">
+        <div class="shop sm:flex gap-3 hidden">
             <!-- <i class="fa-solid fa-magnifying-glass text-zinc-700 bg-white border border-stone-200 py-[10px] px-3 rounded-full shadow-2xl"></i> -->
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor"
@@ -213,20 +214,78 @@
     <!-- Complete Navbar -->
 
 
-      <!-- Banner section start -->
+    <!-- Banner section start -->
 
-           <div class="banner flex flex-col items-center py-6">
-                <img src="assets/banner.png" alt="">
-                <h1 class="text-leading-text font-bold w-5/6 text-2xl xl:text-6xl sm:text-4xl sm:w-4/5 lg:w-4/5 2xl:w-3/5 pt-8 text-center xl:leading-tight 2xl:leading-tight">A barn house of this design has a striking appearance</h1>
-                <p class="text-black text-sm px-3 sm:px-0 pt-3 sm:pt-8 md:w-3/5 2xl:w-2/4 lg:w-3/5 text-center xl:leading-7 2xl:leading-7">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <button class="bg-bg-color2 py-2 mt-5 sm:mt-9 sm:px-6 px-16 rounded-full text-black font-bold">View Details<i
-                    class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-neutral-900 ml-2 py-2 px-2 rounded-full"></i></button>
-           </div>
+    <div class="banner flex flex-col items-center py-6">
+        <img src="assets/banner.png" alt="">
+        <h1
+            class="text-leading-text font-bold w-5/6 text-2xl xl:text-6xl sm:text-4xl sm:w-4/5 lg:w-4/5 2xl:w-3/5 pt-8 text-center xl:leading-tight 2xl:leading-tight">
+            A barn house of this design has a striking appearance</h1>
+        <p
+            class="text-black text-sm px-3 sm:px-0 pt-3 sm:pt-8 md:w-3/5 2xl:w-2/4 lg:w-3/5 text-center xl:leading-7 2xl:leading-7">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="bg-bg-color2 py-2 mt-5 sm:mt-9 sm:px-6 px-16 rounded-full text-black font-bold">View Details<i
+                class="fa-solid fa-arrow-right-long -rotate-45 bg-bg-color text-neutral-900 ml-2 py-2 px-2 rounded-full"></i></button>
+    </div>
 
-      <!-- Banner section end -->
+    <!-- Banner section end -->
 
 
 
+
+    <!-- about-section start -->
+
+    <div
+        class="about bg-[#f4f4f4] flex flex-col lg:flex-row justify-center lg:px-16 xl:px-24 py-6 sm:py-24 lg:gap-10 xl:gap-0  2xl:px-0">
+        <div
+            class="l-content lg:w-7/12  xl:w-7/12 2xl:w-[50%] sm:flex sm:flex-col sm:items-center lg:block lg:items-start lg:text-start">
+            <img class="relative -left-10 -top-6 hidden sm:block" src="assets/Vector.png" alt="">
+
+            <button
+                class="bg-white pr-5 pl-2 py-2 font-bold rounded-full text-stone-800 mx-auto sm:mx-0  flex flex-row-reverse gap-2 items-center">Book
+                Consult <i class="fa-solid fa-arrow-right-long text-stone-800 py-2 px-2 rounded-full ml-2"></i></button>
+
+            <h1
+                class="font-heading-text py-5 font-bold w-4/5 mx-auto sm:mx-0 text-2xl md:text-3xl text-center lg:text-start  xl:text-5xl lg:text-4xl 2xl:w-4/6 lg:w-10/12/ xl:w-5/6 leading-tight">
+                We design thoughtful, liveable spaces
+            </h1>
+            <p
+                class="2xl:w-4/6 xl:w-4/5 px-3 md:w-4/5 md:mx-auto lg:md:mx-0 text-sm text-center lg:text-start text-black leading-7 pb-5">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+
+            <div class="sm:flex px-5 gap-5 lg:block lg:px-0">
+                <div class="cart bg-white w-fit rounded-lg py-6 pl-6 mb-4">
+                    <div class="flex items-center gap-5">
+                        <img src="assets/commercial.png" alt="">
+                        <div>
+                            <h1>Commercial</h1>
+                            <p class="xl:w-4/6 lg:w-11/12">The barn house captivates with its blend of rustic charm and
+                                modern.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div class="cart bg-white w-fit rounded-lg py-6 pl-6 mb-4">
+                    <div class="flex items-center gap-5">
+                        <img src="assets/residential.png" alt="">
+                        <div>
+                            <h1>Residential</h1>
+                            <p class="xl:w-4/6 lg:w-11/12">The barn house captivates with its blend of rustic charm and
+                                modern.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="r-img lg:flex md:pt-9 lg:pt-0">
+            <img class="2xl:pt-0 xl:pt-6 ml-5 sm:mx-auto w-[90%] sm:w-[95%] lg:w-full lg:mx-0" src="assets/Rectangle.png" alt="">
+        </div>
+    </div>
+    <!-- about-section end -->
 
 </body>
 
